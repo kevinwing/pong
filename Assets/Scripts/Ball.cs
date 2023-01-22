@@ -6,17 +6,18 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
     public float speed = 300.0f;
-    // Start is called before the first frame update
 
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponent<Rigidbody2D>(); // get reference to the Rigidbody2D of the Ball
     }
+    // called before first frame is rendered
     private void Start()
     {
         AddStartingForce();
     }
 
+    // choose the starting direction of the ball to add some randomness
     private void AddStartingForce()
     {
         float x = Random.value < 0.5f ? -1.0f : 1.0f;
@@ -25,10 +26,4 @@ public class Ball : MonoBehaviour
         Vector2 direction = new Vector2(x,y);
         _rigidbody.AddForce(direction * this.speed);
     }
-
-    // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
 }
