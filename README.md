@@ -20,7 +20,7 @@ If you wish to make changes to this game, you can fork this repository by follow
 - You can play if you like or exit and start making your own changes to the code.
 - ***Get Hacking!***
 
-Note: The version of Unity used for this project is `2021.3.16f1`
+Note: The version of Unity used for this project is `2021.3.17f1`
 
 ## Install Unity
 
